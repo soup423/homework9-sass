@@ -1,0 +1,100 @@
+body {
+  background-color: cadetblue;
+}
+
+.flexParent1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.flexParent1__block1, .flexParent1__block2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: yellow;
+  height: 90px;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.flexParent1__block2_flex-grow {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.flexParent2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.flexParent2__block1, .flexParent2__block2, .flexParent2__block3, .flexParent2__block4, .flexParent2__block5 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: yellow;
+  height: 90px;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.flexParent2__block5_flex-grow {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.flexParent3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.flexParent3__block1, .flexParent3__block2, .flexParent3__block3 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: yellow;
+  height: 180px;
+  border: 2px solid black;
+  margin: 15px;
+}
+
+.flexParent3__block1_flex-grow {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.flexParent3__block2_flex-grow {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+/*# sourceMappingURL=style.css.map */

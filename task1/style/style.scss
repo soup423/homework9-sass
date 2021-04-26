@@ -1,0 +1,55 @@
+@import "variables";
+body {
+	background-color: cadetblue;
+}
+.flexParent1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.flexParent1__block1, .flexParent1__block2 {
+	flex-grow: 1;
+	background-color: $background-block;
+	height: $height-block;
+	border: $border-block;
+	margin: $margin-block;
+}
+.flexParent1__block2_flex-grow {
+	flex-grow: 2;
+}
+.flexParent2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.flexParent2__block1, .flexParent2__block2, .flexParent2__block3, .flexParent2__block4, .flexParent2__block5{
+	flex-grow: 1;
+	background-color: $background-block;
+	height: $height-block;
+	border: $border-block;
+	margin: $margin-block;
+}
+.flexParent2__block5_flex-grow{
+	flex-grow: 2;
+}
+.flexParent3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.flexParent3__block1, .flexParent3__block2, .flexParent3__block3 {
+	flex-grow: 1;
+	background-color: $background-block;
+	height: $height-block*2;
+	border: $border-block;
+	margin: $margin-block;
+}
+.flexParent3__block1_flex-grow{
+	flex-grow: 2;
+}
+.flexParent3__block2_flex-grow{
+	flex-grow: 3;
+}
