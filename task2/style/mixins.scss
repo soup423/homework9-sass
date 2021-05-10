@@ -1,0 +1,20 @@
+@mixin background($background-border){
+  border:$background-border;
+}
+@mixin block ($width-block,$height-block, $border-block) {
+
+  height: $height-block;
+  border: $border-block;
+ }
+@mixin first-block($first-block-color, $first-block-flex-grow){
+  background-color: $first-block-color;
+  flex-grow: $first-block-flex-grow;
+}
+@mixin second-block($second-block-color, $second-block-flex-grow){
+  background-color: $second-block-color;
+  flex-grow: $second-block-flex-grow;
+}
+@mixin third-block($third-block-color, $third-block-flex-grow){
+  background-color: $third-block-color;
+  flex-grow: $third-block-flex-grow;
+}

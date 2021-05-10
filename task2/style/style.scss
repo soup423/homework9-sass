@@ -1,0 +1,39 @@
+@import "mixins";
+@import "variables";
+body{
+  border: $background-border;
+  background-color: rgb(27, 35, 57);
+}
+.flex-parent {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.flex-parent_first{
+  justify-content: flex-start;
+}
+.flex-parent_second{
+  justify-content: flex-end
+}
+.flex-parent_third {
+  justify-content: center
+}
+.flex-parent_forth {
+  justify-content: space-between
+}
+.flex-parent_fivth {
+  justify-content: space-around;
+  background-color: red;
+}
+.flexParent__block {
+  @include block ($width-block,$height-block, $border-block);
+}
+.flexParent__block_first {
+@include first-block($first-block-color, $first-block-flex-grow);
+}
+.flexParent__block_second {
+  @include second-block($second-block-color, $second-block-flex-grow);
+}
+.flexParent__block_third {
+  @include third-block($third-block-color, $third-block-flex-grow);
+}

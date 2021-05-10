@@ -1,0 +1,60 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.table {
+	@include table;
+}
+.block1,.block2,.block4,.block6 {
+	@include blockGreen ($block-background-green);
+}
+
+.block3, .block5 {
+	@include blockGrey ($block-background-grey);
+}
+.block2, .block4, .block6 {
+	display: flex;
+}
+.block2{
+	justify-content: space-around;
+	align-items: center
+}
+.block2__blockInside {
+	@include blockInside ($insideBlock-background);
+	width: 25%;
+	height: 70%;
+}
+.block4 {
+	align-items: flex-end
+}
+.block4__blockInside {
+	@include blockInside ($insideBlock-background);
+	width: 100%;
+	height: 50%;
+}
+.block6 {
+justify-content: flex-start;
+align-items: flex-end
+}
+.block6__blockInside {
+	@include blockInside ($insideBlock-background);
+	width: 50%;
+	height: 80%;
+}
+
+.block1-border{
+border-right: green 3px dotted;
+border-bottom: $border-color-black ;
+}
+.block2-border{
+border-right: $border-color-black;
+border-bottom: $border-color-black;
+}
+.block3-border{
+	border-bottom: $border-color-black;
+}
+.block4-border{
+	border-right: $border-color-black;
+}
+.block5-border{
+	border-right: $border-color-black;
+}

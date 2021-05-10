@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+.heading{
+@include heading ($heading-max-width,$heading-min-width,$heading-font-size,$heading-text-align,$heading-background-color,$heading-line-height);
+margin: auto
+}
+.header{
+	@include heading ($heading-max-width,$heading-min-width,$heading-font-size,$heading-text-align,$heading-background-color,$heading-line-height);
+	margin: auto
+}
+.columns {
+	@include columns;
+	margin: auto;
+}
+.column1 {
+	@include column1 ($column1-font-size,$column1-background-color,$column1-height,$column1-flex-grow,$column1-line-height,$column1-border-top,$column1-border-bottom);
+	text-align:center;
+}
+.column2{
+	@include  column2 ($column2-font-size,$column1-background-color,$column2-height,$column2-flex-grow,$column2-line-height,$column2-border);
+	text-align:center;
+}
+.column3{
+	@include column3 ($column3-font-size,$column3-background-color,$column3-height,$column3-flex-grow,$column3-line-height,$column3-border-top,$column3-border-bottom);
+	text-align:center;
+	}
+.footer{
+@include footer ($footer-font-size,$footer-background-color,$footer-height,$footer-line-height,$footer-text-align,$footer-max-width);
+margin: auto;
+}	

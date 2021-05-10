@@ -1,0 +1,71 @@
+body {
+  border: 25px solid #293c50;
+  background-color: #1b2339;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.flex-parent_first {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-parent_second {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-parent_third {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-parent_forth {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-parent_fivth {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+}
+
+.flexParent__block {
+  height: 100px;
+  border: black, solid, 1px;
+}
+
+.flexParent__block_first {
+  background-color: #00aeef;
+  -webkit-box-flex: 0.1;
+      -ms-flex-positive: 0.1;
+          flex-grow: 0.1;
+}
+
+.flexParent__block_second {
+  background-color: #b8f8a2;
+  -webkit-box-flex: 0.15;
+      -ms-flex-positive: 0.15;
+          flex-grow: 0.15;
+}
+
+.flexParent__block_third {
+  background-color: #8e85e3;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
+}
+/*# sourceMappingURL=style.css.map */

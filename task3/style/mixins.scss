@@ -1,0 +1,58 @@
+@mixin heading ($heading-max-width,$heading-min-width,$heading-font-size,$heading-text-align,$heading-background-color,$heading-line-height) {
+	max-width: $heading-max-width;
+	min-width: $heading-min-width;
+	font-size: $heading-font-size;
+	text-align: $heading-text-align;
+	background-color: $heading-background-color;
+	line-height:$heading-line-height;
+}
+@mixin header ($header-max-width,$header-min-width,$header-font-size,$header-text-align,$header-background-color,$header-line-height){
+	max-width: $header-max-width;
+	min-width: $header-min-width;
+	font-size: $header-font-size;
+	text-align: $header-text-align;
+	background-color: $header-background-color;
+	line-height:$header-line-height;
+}
+@mixin columns {
+	max-width: 960px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@mixin  column1 ($column1-font-size,$column1-background-color,$column1-height,$column1-flex-grow,$column1-line-height,$column1-border-top,$column1-border-bottom){
+	font-size: $column1-font-size;
+	background-color: $column1-background-color;
+	height: $column1-height;
+	flex-grow: $column1-flex-grow;
+	line-height: $column1-line-height;
+	border-top: $column1-border-top;
+	border-top: $column1-border-bottom;
+}
+@mixin  column3 ($column3-font-size,$column3-background-color,$column3-height,$column3-flex-grow,$column3-line-height,$column3-border-top,$column3-border-bottom){
+	font-size: $column3-font-size;
+	background-color: $column3-background-color;
+	height: $column3-height;
+	flex-grow: $column3-flex-grow;
+	line-height: $column3-line-height;
+	border-top: $column3-border-top;
+	border-top: $column3-border-bottom;
+}
+@mixin  column2 ($column2-font-size,$column1-background-color,$column2-height,$column2-flex-grow,$column2-line-height,$column2-border){
+	font-size: $column2-font-size;
+	background-color: $column2-background-color;
+	height: $column2-height;
+	flex-grow: $column2-flex-grow;
+	line-height: $column2-line-height;
+	border: $column2-border;
+}
+@mixin  footer ($footer-font-size,$footer-background-color,$footer-height,$footer-line-height,$footer-text-align,$footer-max-width){
+	font-size: $footer-font-size;
+	background-color:$footer-background-color;
+	height: $footer-height;
+	line-height:$footer-line-height;
+	text-align: $footer-text-align;
+	max-width: $footer-max-width;
+}

@@ -1,0 +1,17 @@
+@mixin table {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	grid-template-rows:300px 300px;
+	border: 4px black dotted;
+	max-width: 900px;
+	margin: auto;
+}
+@mixin blockGreen ($block-background-green) {
+	background-color: $block-background-green;
+}
+@mixin blockGrey ($block-background-grey){
+background-color:$block-background-grey;
+}
+@mixin blockInside ($insideBlock-background){
+background-color: $insideBlock-background;
+}
